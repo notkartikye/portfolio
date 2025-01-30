@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#back{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #080808;
+}
+
+#back img{
+    position: absolute;
+    top: -10%;
+    width: 100vw;
+}
+
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 45px;
+    height: 10vh;
+}
+
+#nav a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #a4a4a4;
+}
+
+#leftnav a{
+    font-family: "Righteous";
+    font-size: 40px;
+    border: 100px 0 0 0;
+    margin-bottom: 10000px;
+}
+
+#rightnav{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#project, #about, #contact {
+  display: inline;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#project::before, #about::before, #contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: #50ffeb;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+#project:hover::before, #about:hover::before, #contact:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#rightnav a:hover{
+    color: #50ffeb;
+}
+
+#mainelements{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100vh;
+}
+
+#logos a {
+    color: #a4a4a4;
+  }
+  
+  #logos {
+    text-align: right;
+    margin-top: 80px;
+    margin-right: 70px;
+  }
+  
+  #logos ion-icon {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    transform: translateX(30px);
+    animation: logo-anim 0.5s ease-in-out forwards;
+  }
+  
+  #logos ion-icon:hover {
+    animation-fill-mode: forwards;
+    color: #50ffeb;
+    animation-name: bounce;
+  }
+  
+  @keyframes logo-anim {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+#kartikye{
+    width: 400%;
+    position: absolute;
+    top: 45%;
+    margin-top: 120px;
+}
+
+#kartikye h1{
+    display: inline-block;
+    font-family: "Righteous";
+    font-size: 10vw;
+    font-weight: 400;
+    animation: 15s linear infinite;
+    animation-name: text;
+}
+
+#one{
+    padding-top: 1vw;
+    position: relative;
+    margin-bottom: 10vw;
+    width: 100%;
+    height: 80vh;
+    background-color: #FFFEFE;
+}
+
+#aboutme {
+    position: relative;
+    padding: 0vw 0vw 0vw 14vw;
+    display: flex;
+    justify-content: space-between;
+    color: #a4a4a4;
+    text-align: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    margin-top: 50px;
+    font-size: 1.6vw;
+  }
+  
+
+#helpingbrand{
+    text-align:left;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #080808;
+    transform: translateY(20%);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    margin-top: -50px;
+}
+
+#helpingbrand h1{
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+
+#recentprojects {
+    position: relative;
+    padding: 0vw 0vw 4vw 14vw;
+    display: flex;
+    justify-content: space-between;
+    color: #a4a4a4;
+    text-align: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    margin-top: 50px;
+  }
+  
+#recentprojects a {
+    position: relative;
+    bottom: 0%;
+    font-size: 1.6vw;
+    color: #a4a4a4;
+  }
+
+#line{
+    position: relative;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    height: 5px;
+    background-color: #50ffeb;
+}
+
+#two{
+    padding-top: 1vw;
+    padding-bottom: 10vw;
+    position: relative;
+    width: 100%;
+    height: 125vh;
+    color: #080808;
+    font-size: 1.6vw;
+}
+
+#three{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFEFE;
+    overflow: hidden;
+}
+
+#four{
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    background-color: #080808;
+}
+
+#lets_create{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    display: flex;
+}
+
+#lets_create h1{
+    font-size: 6vw;
+    font-weight: 400;
+}
+#the_future{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    display: flex;
+}
+
+#the_future h1{
+    font-size: 6vw;
+    font-weight: 400;
+}
+
+#the_future span {
+    color: #50ffeb;
+}
+
+#made_by{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#made_by h1{
+    color: #fff;
+    font-size: 1.25vw;
+    font-weight: 400;
+}
+
+#made_by h1 span{
+    color: rgb(255, 45, 45);
+}
+
+.background {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    height: 120%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+}
+
+@keyframes text{
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(-50.5%);
+    }
+}
+
+.wrap *,
+.wrap *:before,
+.wrap *:after {
+box-sizing: border-box;
+transition: 0.5s ease-in-out;
+}
+
+.wrap *:before,
+.wrap *:after {
+z-index: -1;
+}
+
+.wrap a {
+    text-decoration: none;
+    line-height: 80px;
+}
+
+.wrap {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 50px;
+    font-family: "Outfit";
+    font-weight: 400;
+    font-size: large;
+    text-align: center;
+}
+
+[class^="button_6"] {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    margin: 1rem 0;
+    border: 1px solid currentColor;
+}
+
+.button_6 {
+    color: #a4a4a4;
+    border-color: #a4a4a4;
+    border-radius: 100px;
+}
+
+.button_6 span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #50ffeb;
+    /* transition: width 0.4s ease-in-out, height 0.4s ease-in-out; */
+    /* transform: translate(-50%, -50%); */
+    z-index: -1;
+}
+
+.button_6:hover {
+    color: #080808;
+    background-color: #50ffeb;
+    border-color: #50ffeb;
+}
+
+.button_6:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.button_6:active {
+    background-color: #50ffeb;
+}
+
+.button_6:nth-of-type(1) {
+    max-width: 350px;
+}
+
+.button_6:nth-of-type(2) {
+    max-width: 270px;
+}
+
+.button_6:nth-of-type(3) {
+    max-width: 200px;
+}
+
+
+main {
+  width: 100vw;
+  height: 60vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.card{
+    width: 30%;
+    background-color: #080808;
+    margin: auto;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    height: 600px;
+    display: inline-block;
+    transform: scale(.9);
+    transition: all .2s;
+    border-radius: 25px;
+  }
+  
+  .card:hover{
+    transform: scale(1);
+  }
+  
+  .card-top {
+    width: 100%;
+    height: 270px;
+    background-color: #f1f1f1;
+    padding-bottom: 35px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .card-top > img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .card-mid {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: #080808;
+    overflow:hidden;
+    transition: all .3s;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .card-mid h4{
+    margin: -10px;
+    color: #50ffeb;
+    font-family: "Outfit";
+    font-size: 40px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+  
+  .card-mid label{
+    margin: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 23px;
+    color: #fff;
+    border-radius: 25px;
+  }
+  
+  .card-image{
+      width: 100%;
+      transition: all .3s;
+      border-radius: 25px;
+  }
+  
+  .card:hover .card-image {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    border-radius: 25px;
+  }
+  
+.card-desc {
+  transition: all .3s .2s;
+  border-left: 0px solid #50ffeb;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left: 5px;
+}
+
+.card:hover .card-desc {
+  border-left: 2px solid #50ffeb;
+  padding-left: 8px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.card-desc {
+  transition: all .3s .2s;
+  border-left: 0px solid #50ffeb;
+  transform: translateY(-5px); /* Adjust the value as needed */
+}
+
+.card-mid h4 {
+    transform: translateY(-20px); 
+    margin-left: 5px;
+  }
+.card:hover .card-mid h4 {
+    transform: translateY(0px);
+  }
+  
+  
+
+
+#one {
+    padding-top: 1vw;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #FFFEFE;
+  }
+  
+  #aboutme {
+    position: relative;
+    padding: 0vw 0vw 4vw 14vw;
+    display: flex;
+    justify-content: space-between;
+    color: #a4a4a4;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #aboutme a {
+    position: relative;
+    bottom: 0%;
+    font-size: 1.6vw;
+    color: rgb(143, 143, 143);
+  }
+  
+  #line-1 {
+    position: relative;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    height: 5px;
+    background-color: #50ffeb;
+    opacity: 1; /* added opacity property to hide the element initially */
+  }
+  #line-2 {
+    position: relative;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    height: 5px;
+    background-color: #50ffeb;
+    opacity: 1; /* added opacity property to hide the element initially */
+  }
+  
+
+
+  #nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 45px;
+    height: 10vh;
+  }
+  
+  #nav a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #a4a4a4;
+  }
+  
+  #leftnav a {
+    font-family: "Righteous";
+    font-size: 40px;
+    border: 100px 0 0 0;
+    margin-bottom: 10000px;
+  }
+  
+  #rightnav {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #project,
+  #about,
+  #contact {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  #project::before,
+  #about::before,
+  #contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: #50ffeb;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s;
+  }
+  
+  #project:hover::before,
+  #about:hover::before,
+  #contact:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  #rightnav a:hover {
+    color: #50ffeb;
+  }
+  
+  /* Add animation for the navigation elements on page load */
+  #about, #project, #contact {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: navSlide 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes navSlide {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  #leftnav {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: navSlide 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes navSlide {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
